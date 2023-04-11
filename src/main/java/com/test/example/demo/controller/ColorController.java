@@ -13,7 +13,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @Slf4j(topic = "SessionController")
 public class ColorController {
 
-    private ColorService colorService;
+    private final ColorService colorService;
 
     public ColorController(final ColorService colorService) {
         this.colorService = colorService;
